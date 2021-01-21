@@ -1,0 +1,18 @@
+
+X	java:S1258"<This block of commented-out lines of code should be removed.(¾‡®®8‘ùıÙ.
+X	java:S125T"<This block of commented-out lines of code should be removed.(ƒåÈˆ8Ôœİÿå.
+T
+java:S1128"7Remove this unused import 'java.text.SimpleDateFormat'.(ú¡ÙÛ8ƒá€î.
+W	java:S125N"<This block of commented-out lines of code should be removed.(ã©–V8îÄõèâ.
+]	java:S125"<This block of commented-out lines of code should be removed.(ÒÌâ–øÿÿÿÿ8Š»óŒñ.
+X	java:S125d"<This block of commented-out lines of code should be removed.(Ã½é8¬°ï´ğ.
+]	java:S125X"<This block of commented-out lines of code should be removed.(§ÖçÂøÿÿÿÿ8Íå¯¸ï.
+X	java:S125h"<This block of commented-out lines of code should be removed.(ä¾¹8Ş¬òŒñ.
+]	java:S125["<This block of commented-out lines of code should be removed.(å€Âşÿÿÿÿ8Âšáï.
+M
+java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8ƒá€î.
+U	java:S106u"9Replace this use of System.out or System.err by a logger.(ÉİÃÅ8”öæñ.
+R
+java:S1128"5Remove this unused import 'java.text.ParseException'.(ñ®ï•8Š£Ìãï.
+
+java:S11307"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(ÙØ¤Şıÿÿÿÿ8‹Üüñ.

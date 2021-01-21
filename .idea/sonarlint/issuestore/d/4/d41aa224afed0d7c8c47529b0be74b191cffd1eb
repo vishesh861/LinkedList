@@ -1,0 +1,6 @@
+
+j	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤ÓŸ8˜Œ€î.
+H
+java:S1128"+Remove this unused import 'java.util.Date'.(¸…¼ü8ƒáşŒî.
+z	java:S135"YReduce the total number of break and continue statements in this loop to use at most one.(äŒ‡Àùÿÿÿÿ8™èÏî.
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(­ËÖşÿÿÿÿ8Õùî.

@@ -1,0 +1,14 @@
+
+
+java:S4144"bUpdate this method so that its implementation is not identical to "insertIntoEmptyList" on line 5.(ˆÚş8¦÷ÂòÖ.
+>
+java:S1643i"Use a StringBuilder instead.(±Æ³‚øÿÿÿÿ8¦÷ÂòÖ.
+Z	java:S106K"9Replace this use of System.out or System.err by a logger.(ş¨ûşÿÿÿÿ8¦÷ÂòÖ.
+[
+java:S2259N"?A "NullPointerException" could be thrown; "p" is nullable here.(²Øát8¦÷ÂòÖ.
+T
+java:S1854:"7Remove this useless assignment to local variable "tmp".(ì›ÍÂ8¦÷ÂòÖ.
+E
+java:S1481:"(Remove this unused "tmp" local variable.(ì›ÍÂ8¦÷ÂòÖ.
+n
+java:S1104"QMake start a static final constant or non-public and provide accessors if needed.(ïÊ›£8¦÷ÂòÖ.

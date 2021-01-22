@@ -27,6 +27,6 @@ public class Person  {
                 sb.append(c);
             }
         }
-        System.out.println(sb);
+
     }
 }

@@ -128,6 +128,7 @@ public class LinkedListMain {
             Skillenza skillenza = new Skillenza();
             skillenza.skillenza(arr);
             T--;
+
         }
 
 

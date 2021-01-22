@@ -7,7 +7,8 @@ public class Break {
         ArrayList<String> list = new ArrayList<>();
         String str1 = "";
         String str2 = "";
-        
+
+
 
         for (int i=0; i<str.length(); i++) {
 

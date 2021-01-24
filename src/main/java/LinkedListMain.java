@@ -1,3 +1,5 @@
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.util.*;
 
 import java.text.ParseException;
@@ -50,6 +52,9 @@ public class LinkedListMain {
             }
         }
     }*/
+    static void check(Integer x) {
+        x = Integer.valueOf(10);
+    }
 
     public static void main(String[] args) throws Exception {
         /*LinkedList linkedList = new LinkedList();
@@ -117,7 +122,7 @@ public class LinkedListMain {
 
         System.out.println("vishesh");
         System.out.println("agarwal");*/
-        Scanner sc = new Scanner(System.in);
+       /* Scanner sc = new Scanner(System.in);
         int T = sc.nextInt();
         while (T > 0) {
             int N = sc.nextInt();
@@ -128,8 +133,14 @@ public class LinkedListMain {
             Skillenza skillenza = new Skillenza();
             skillenza.skillenza(arr);
             T--;
+        }*/
 
-        }
+       Lambda lambda = (a, b) -> {
+            int c = a + b;
+           System.out.println(c);
+       };
+
+       lambda.check(2, 6);
 
 
 

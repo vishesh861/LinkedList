@@ -1,14 +1,12 @@
 package Threads;
 
-public class Thread_Demo implements Runnable {
-
-
+public class Thread_Demo extends Thread {
 
     @Override
     public void run() {
 
-        for (int i=6; i<=10; i++) {
-                System.out.println(i);
+        for (int i=0; i<5; i++) {
+                System.out.println(Thread.currentThread().getName());
         }
     }
 }

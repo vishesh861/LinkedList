@@ -1,4 +1,8 @@
 
-]	java:S125"<This block of commented-out lines of code should be removed.(ÒÌâ–øÿÿÿÿ8Ãøğ´ğ.
-_
-java:S2094"BRemove this empty class, write its code or make it an "interface".(ÈÏ™»8ÚÃãñ.
+]	java:S125"<This block of commented-out lines of code should be removed.(ÒÌâ–øÿÿÿÿ8Ãøğ´ğ.
+r	java:S117N"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñ·İüÿÿÿÿ8éòç¬‚/
+m	java:S117O"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(á§©«8éòç¬‚/
+o
+java:S3776;"RRefactor this method to reduce its Cognitive Complexity from 25 to the 15 allowed.(¶÷·€8éòç¬‚/
+T	java:S106|"9Replace this use of System.out or System.err by a logger.(ÇÑ×8éòç¬‚/
+X	java:S125c"<This block of commented-out lines of code should be removed.(Ùô¶á8éòç¬‚/

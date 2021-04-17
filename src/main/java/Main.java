@@ -1,12 +1,15 @@
-import arrays.CountSubarrayWithZeroSum;
-import arrays.SumInArray;
-import subsequence.LongestIncreasingSubsequence;
+import arrays.ArrayPermutations;
+import arrays.CombinationSum;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.HashSet;
+import java.util.List;
 
 public class Main {
+
+    private volatile Integer count = 1;
+    private volatile Integer threadIdToRun = 1;
+    private Object object = new Object();
 
     public static void main(String[] args) throws InterruptedException {
 
@@ -51,25 +54,13 @@ public class Main {
     Demo1 d = new Demo1();
     int b = d.small(arr, arr1);
         System.out.println(b);*/
-        String[] arr = {"vis", "poy"};
-        String[] arr1 = {"vab", "pot"};
-        Anagram_Demo a = new Anagram_Demo();
-        int[] ar = new int[arr.length];
-        for (int i = 0; i < arr.length; i++) {
 
-            String str = arr[i];
-            String str1 = arr1[i];
+       /* CombinationSum c = new CombinationSum();
+        int[] arr = {2,3,6,7};
+        int target = 7;
+        List<List<Integer>> list = c.combination(arr, target);
+        System.out.println(list);*/
 
-            if (str.length() != str1.length()) {
-                ar[i] = -1;
-            } else {
-                int b = a.anagram(str, str1);
-                ar[i] = b;
-            }
-        }
-
-        for (int i=0; i<arr.length; i++) {
-            System.out.print(ar[i] + " ");
-        }
     }
 }
+

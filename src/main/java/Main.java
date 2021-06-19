@@ -1,17 +1,25 @@
 import arrays.ArrayPermutations;
 import arrays.CombinationSum;
 
+import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Optional;
+import java.util.Scanner;
+import java.util.Spliterator;
+import java.util.StringTokenizer;
+import java.util.TreeSet;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
+import com.sun.xml.internal.ws.policy.privateutil.PolicyUtils;
 
 public class Main {
 
-    private volatile Integer count = 1;
-    private volatile Integer threadIdToRun = 1;
-    private Object object = new Object();
-
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) throws Exception {
 
         /*int[] arr = {13,15,17,18,19,20,22};
 
@@ -20,9 +28,9 @@ public class Main {
         MissingNumber2 missingNumber = new MissingNumber2();
         missingNumber.missing_two(arr, n);*/
 
-       /* LongestSubstring longestSubstring = new LongestSubstring();
-       int max = longestSubstring.longestUniqueSubsttr("abcabcbb");
-        System.out.println(max);*/
+        LongestSubstring longestSubstring = new LongestSubstring();
+       int max = longestSubstring.longestUniqueSubsttr("vishesh");
+        System.out.println(max);
 
      /*   LongestPalindromeSubstring l = new LongestPalindromeSubstring();
         String str = l.longestPalindrome("babad");
@@ -61,6 +69,52 @@ public class Main {
         List<List<Integer>> list = c.combination(arr, target);
         System.out.println(list);*/
 
+       /*ArrayList<String> list = new ArrayList<>();
+        list.add("vishesh");
+        list.add("agarwal");*/
+
+     /*   ArrayList<Integer> list = new ArrayList<>();
+        list.add(2);
+        list.add(5);
+        list.add(10);
+        list.add(15);
+        list.add(12);
+
+        Stream<Integer> a = list.stream().filter(s -> s % 2 != 0);
+        a.forEach(s -> System.out.println(s*s));*/
+        //foreach
+        //list.stream().forEach(s -> System.out.print(s + " "));
+
+        //map
+        /*Stream<Character> l = (Stream<Character>) list.stream().map(n -> n.charAt(0)).collect(Collectors.toList());
+        l.forEach(a -> System.out.println(a));*/
+        //max
+        //Integer a = list.stream().max(Integer::compare).get();
+        //Optional<Integer> a = list.stream().max(Comparator.reverseOrder());
+
+        //filter
+        /*Stream<Integer> l =  list.stream().filter(s -> s > 15);
+        l.forEach(a -> System.out.println(a));*/
+
+        //SplitIterator
+      /*  Spliterator<String> s = list.stream().spliterator();
+        s.forEachRemaining(n -> System.out.println(n));*/
+
+        //count
+        /*long c = list.stream().count();
+        System.out.println(c);*/
+
+        //distinct
+        /*Stream<String> l = list.stream().distinct();
+        l.forEach(n -> System.out.println(n));*/
+
+        // Creating a Stream of Strings
+        /*Stream<String> stream = Stream.of("GFG", "Geeks",
+                "for", "GeeksforGeeks");*/
+
+        // Using forEachOrdered(Consumer action)
+       /* stream.flatMap(str-> Stream.of(str.charAt(2)))
+                .forEachOrdered(System.out::println);*/
+
     }
 }
-

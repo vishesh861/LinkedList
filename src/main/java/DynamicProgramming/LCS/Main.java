@@ -24,8 +24,18 @@ public class Main {
         int b = 7;
         l.longest(s1, s2, a, b);*/
 
+       /* LongestCommonSubsequencePrinting l = new LongestCommonSubsequencePrinting();
+        String s1 = "ezupkr";
+        String s2 = "ubmrapg";
+        int a = 6;
+        int b = 7;
+        l.longest(s1, s2, a, b);*/
 
+       /*LongestPallandromicSubstring l = new LongestPallandromicSubstring();
+       String s = "forgeeksskeegfor ";
+        l.longest(s);*/
 
-
+       LongestRepeatingSubsequence l = new LongestRepeatingSubsequence();
+       l.longest("axxxy");
     }
 }

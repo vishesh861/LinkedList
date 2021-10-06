@@ -1,22 +1,3 @@
-import arrays.ArrayPermutations;
-import arrays.CombinationSum;
-
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Optional;
-import java.util.Scanner;
-import java.util.Spliterator;
-import java.util.StringTokenizer;
-import java.util.TreeSet;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
-import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
-import com.sun.xml.internal.ws.policy.privateutil.PolicyUtils;
-
 public class Main {
 
     public static void main(String[] args) throws Exception {
@@ -28,9 +9,9 @@ public class Main {
         MissingNumber2 missingNumber = new MissingNumber2();
         missingNumber.missing_two(arr, n);*/
 
-        LongestSubstring longestSubstring = new LongestSubstring();
+       /* LongestSubstring longestSubstring = new LongestSubstring();
        int max = longestSubstring.longestUniqueSubsttr("vishesh");
-        System.out.println(max);
+        System.out.println(max);*/
 
      /*   LongestPalindromeSubstring l = new LongestPalindromeSubstring();
         String str = l.longestPalindrome("babad");
@@ -115,6 +96,8 @@ public class Main {
         // Using forEachOrdered(Consumer action)
        /* stream.flatMap(str-> Stream.of(str.charAt(2)))
                 .forEachOrdered(System.out::println);*/
+
+
 
     }
 }

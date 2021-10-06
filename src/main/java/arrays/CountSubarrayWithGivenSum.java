@@ -3,7 +3,7 @@ package arrays;
 import java.util.HashMap;
 
 public class CountSubarrayWithGivenSum {
-// {1,2,3,,9,5,3,4.1}
+// {2,3,9,5,3,4.1}
     public void count(int[] arr, int sum) {
 
         int sum1=0, count=0;

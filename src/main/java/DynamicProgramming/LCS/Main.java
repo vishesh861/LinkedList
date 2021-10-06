@@ -1,5 +1,7 @@
 package DynamicProgramming.LCS;
 
+import New15.MaximumSumSubsequenceNonAdjacent;
+
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -16,6 +18,13 @@ public class Main {
         int b = 7;
         int i = l.longest(s1, s2, a, b);
         System.out.println(i);*/
+
+      /*  LongestCommonSubsequence l = new LongestCommonSubsequence();
+        String s1 = "ezupkr";
+        String s2 = "ubmrapg";
+        int a = 6;
+        int b = 7;
+        l.longest(s1, s2, a, b);*/
 
       /*  LongestCommonSubstring l = new LongestCommonSubstring();
         String s1 = "ezupkr";
@@ -35,7 +44,10 @@ public class Main {
        String s = "forgeeksskeegfor ";
         l.longest(s);*/
 
-       LongestRepeatingSubsequence l = new LongestRepeatingSubsequence();
-       l.longest("axxxy");
+    /*   LongestRepeatingSubsequence l = new LongestRepeatingSubsequence();
+       l.longest("axxxy");*/
+
+       /* MaximumSumSubsequenceNonAdjacent m = new MaximumSumSubsequenceNonAdjacent();
+        m.knight();*/
     }
 }

@@ -2,7 +2,7 @@ package trees;
 
 public class HeightOfTree {
 
-    public int height(Node node) {
+        public int height(Node node) {
 
         if (node == null) {
             return 0;

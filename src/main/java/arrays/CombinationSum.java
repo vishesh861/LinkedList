@@ -28,7 +28,6 @@ public class CombinationSum {
             result.add(new ArrayList<Integer>(list));
         }
 
-
         for (int i=start; i<a.length; i++) {
 
             list.add(a[i]);

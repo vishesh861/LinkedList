@@ -7,12 +7,11 @@ public class Anagram {
 
         /*int CHAR = 256;
 
-        int[] count1 = new int[CHAR];
-        int[] count2 = new int[CHAR];
+        int[] count = new int[CHAR];
 
-        for (int i = 0; i < s1.length && i < s2.length; i++) {
-            count1[s1[i]]++;
-            count2[s2[i]]++;
+        for (int i = 0; i < s1.length(); i++) {
+            count[s1[i]]++;
+            count[s2[i]]--;
         }
 
         if (s1.length != s2.length) {
@@ -20,7 +19,7 @@ public class Anagram {
         }
 
         for (int i = 0; i < CHAR; i++) {
-            if (count1[i] != count2[i]) {
+            if (count[i] != 0) {
                 return false;
             }
         }

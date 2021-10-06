@@ -2,7 +2,7 @@ package trees;
 
 public class Inorder {
 
-    public void inorder(Node node) {
+        public void inorder(Node node) {
 
         if (node != null) {
             inorder(node.left);

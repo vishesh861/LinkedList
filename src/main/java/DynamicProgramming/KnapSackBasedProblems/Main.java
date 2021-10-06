@@ -1,6 +1,8 @@
 package DynamicProgramming.KnapSackBasedProblems;
 
 
+import New15.MaximumSumInCircularArray;
+import New15.MergeIntervals;
 import Threads.A;
 
 import java.util.ArrayList;
@@ -40,7 +42,7 @@ public class Main {
        boolean b = e.equalSum(arr, n);
         System.out.println(b);*/
 
-      /* CountOfSubsetSum c = new CountOfSubsetSum();
+       /*CountOfSubsetSum c = new CountOfSubsetSum();
        int[] arr = {2,3,5,6,8,10};
        int n = 6;
        int sum = 10;
@@ -53,10 +55,15 @@ public class Main {
       int a = m.min(arr, n);
         System.out.println(a);*/
 
-    CountSubsetWithGivenDiff c = new CountSubsetWithGivenDiff();
+   /* CountSubsetWithGivenDiff c = new CountSubsetWithGivenDiff();
     int[] arr = {1,1,2,3};
     int diff = 1;
 
-    c.count(arr, diff);
+    c.count(arr, diff);*/
+        /*int arr[] = { 11, 10, -20, 5, -3, -5, 8, -13, 10 };
+        MaximumSumInCircularArray.maxCircularSum(arr,9);*/
+
+        MergeIntervals m = new MergeIntervals();
+        m.insert();
     }
 }

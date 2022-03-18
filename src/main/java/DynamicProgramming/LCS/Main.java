@@ -49,5 +49,9 @@ public class Main {
 
        /* MaximumSumSubsequenceNonAdjacent m = new MaximumSumSubsequenceNonAdjacent();
         m.knight();*/
+
+        LongestRepeatingSubstring longestRepeatingSubstring = new LongestRepeatingSubstring();
+        longestRepeatingSubstring.longest("banana");
+
     }
 }

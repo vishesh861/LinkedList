@@ -3,7 +3,7 @@ package arrays;
 import java.util.Arrays;
 import java.util.List;
 
-public class EficientJanitor {
+public class  EficientJanitor {
 /*list.add(1.00f);
         list.add(1.99f);
         list.add(2.5f);

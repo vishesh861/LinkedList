@@ -8,8 +8,10 @@ public class Main {
 
     public static void main(String[] args) {
 
-        int[] arr = {1, 5, 5, 2, 2, -1, 3};
-        BinaryTreeFromArray.createTree(arr, 7);
+        /*int[] arr = {1, 5, 5, 2, 2, -1, 3};
+        BinaryTreeFromArray.createTree(arr, 7);*/
+
+
 
      /*   Node node = new Node(10);
         node.left = new Node(20);
@@ -62,6 +64,19 @@ public class Main {
        /* LowestCommonAncestor l = new LowestCommonAncestor();
         l.lca(node, 20, 80);*/
 
+        /*Node node = new Node(10);
+        node.left = new Node(5);
+        node.left.left = new Node(3);
+        node.left.left.left = new Node(3);
+        node.left.left.right = new Node(-2);
+        node.left.right = new Node(2);
+        node.left.right.right = new Node(1);
+        node.right = new Node(-3);
+        node.right.right = new Node(11);
+        TreePathDemo t = new TreePathDemo();
+        int a = t.pathSum(node, 8);
+        System.out.println(a);*/
 
+       
     }
 }

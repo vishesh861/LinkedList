@@ -2,28 +2,28 @@ package arrays;
 
 public class MaxSubarrayProduct {
 
-    public void max(int[] arr) {
+    public void max(int[] nums) {
 
-        int[] maxArray = new int[arr.length];
-        int[] minArray = new int[arr.length];
-        int result = arr[0];
-        maxArray[0] = arr[0];
-        minArray[0] = arr[0];
+        int max = nums[0], min = nums[0], ans = nums[0];
+        int n = nums.length;
 
-        for (int i=1; i<arr.length; i++) {
+        for (int i = 1; i < n; i++) {
 
-            if (arr[i] > 0) {
-                maxArray[i] = Math.max(arr[i], maxArray[i-1] * arr[i]);
-                minArray[i] = Math.max(arr[i], minArray[i-1] * arr[i]);
-            } else {
-                maxArray[i] = Math.max(arr[i], minArray[i-1] * arr[i]);
-                minArray[i] = Math.max(arr[i], maxArray[i-1] * arr[i]);
+            // Swapping min and max
+            if (nums[i] < 0){
+                int temp = max;
+                max = min;
+                min = temp;
             }
 
-            result = Math.max(result, maxArray[i]);
+            max = Math.max(nums[i], max * nums[i]);
+            min = Math.min(nums[i], min * nums[i]);
+
+
+            ans = Math.max(ans, max);
         }
 
-        System.out.println(result);
+        System.out.println(ans);
 
     }
 }

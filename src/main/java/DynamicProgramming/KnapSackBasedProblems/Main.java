@@ -15,13 +15,13 @@ public class Main {
 
     public static void main(String[] args) {
 
-     /*   int[] weight = {10,20,30};
-        int[] val = {60,100,120};
-        int w = 50;
+        int[] weight = {1,2,3};
+        int[] val = {10,15,40};
+        int w = 6;
         int n = 3;
         MaximumWeightInBag m = new MaximumWeightInBag();
         int a = m.max_weight(weight, val, w, n);
-        System.out.println(a);*/
+        System.out.println(a);
 
        /* CoinChange c = new CoinChange();
         int[] arr = {1,2,3};
@@ -63,7 +63,6 @@ public class Main {
         /*int arr[] = { 11, 10, -20, 5, -3, -5, 8, -13, 10 };
         MaximumSumInCircularArray.maxCircularSum(arr,9);*/
 
-        MergeIntervals m = new MergeIntervals();
-        m.insert();
+
     }
 }

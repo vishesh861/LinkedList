@@ -4,6 +4,11 @@ public class Main {
 
     public static void main(String[] args) {
 
+        int[] arr = {2,3,6,7};
+        int target = 7;
+        CombinationSum combinationSum = new CombinationSum();
+        combinationSum.combination(arr, target);
+
       /*  AllSubsetsWithoutRepeat a = new AllSubsetsWithoutRepeat();
         int[] arr = {1,2,3};
         a.subset(arr);*/
@@ -49,12 +54,17 @@ public class Main {
         int[] arr = {12,14,15,13,19,20};
         l.longest(arr);*/
 
-       /* ListNode node  = new ListNode(1);
-        node.next = new ListNode(4);
-        node.next.next = new ListNode(5);
+     /*   ListNode node  = new ListNode(1);
+        node.next = new ListNode(2);
+        node.next.next = new ListNode(3);
+        node.next.next.next = new ListNode(4);
+        node.next.next.next.next = new ListNode(5);
+        node.next.next.next.next.next = new ListNode(6);
+        node.next.next.next.next.next.next = new ListNode(7);
+        node.next.next.next.next.next.next.next = new ListNode(8);
+*/
 
-        ListNode node1  = new ListNode(1);
-        node1.next = new ListNode(3);
+        /*ode1.next = new ListNode(3);
         node1.next.next = new ListNode(4);
 
         ListNode node2  = new ListNode(2);
@@ -82,8 +92,8 @@ public class Main {
         int[] arr = {5,1,3,2};
         m.min(arr, 4);*/
 
-        FindMissingAndRepeating f = new FindMissingAndRepeating();
-        f.missing();
+        /*FindMissingAndRepeating f = new FindMissingAndRepeating();
+        f.missing();*/
 
 
     }

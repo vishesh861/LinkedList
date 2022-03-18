@@ -14,6 +14,6 @@ public class Main {
         int n = 4;
         int m = 5;
 
-        MaximumRectangleSum.maxSumRectangle(arr, n, m);
+
     }
 }

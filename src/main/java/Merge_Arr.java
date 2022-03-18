@@ -1,24 +1,26 @@
 public class Merge_Arr {
 
-    public void merge(int[] arr1, int[] arr2) {
+    public void merge(int[] X, int[] Y)
+    {
+        int m = X.length;
+        int n = Y.length;
 
-       int a = arr1.length;
-       int b = arr2.length;
+        for (int i = 0; i < m; i++)
+        {
+            if (X[i] > Y[0])
+            {
+                int temp = X[i];
+                X[i] = Y[0];
+                Y[0] = temp;
 
-       for (int i=b-1; i>=0; i--) {
+                int first = Y[0];
+                int k;
+                for (k = 1; k < n && Y[k] < first; k++) {
+                    Y[k - 1] = Y[k];
+                }
 
-           int j,l = arr1[a-1];
-
-           for (j=a-2; j>=0; j--) {
-               arr1[j+1] = arr1[j];
-           }
-
-           if(j != a-2 || l > arr2[i]) {
-               arr2[j+1] = arr2[i];
-               arr2[i] = l;
-           }
-       }
-
-
+                Y[k - 1] = first;
+            }
+        }
     }
 }

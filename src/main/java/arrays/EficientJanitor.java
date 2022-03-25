@@ -3,6 +3,27 @@ package arrays;
 import java.util.Arrays;
 import java.util.List;
 
+/* For Only two people at a time
+
+ public int numRescueBoats(int[] people, int limit) {
+        Arrays.sort(people);
+        int i = 0, j = people.length - 1;
+        int ans = 0;
+
+        while (i <= j) {
+            ans++;
+            if (people[i] + people[j] <= limit)
+                i++;
+            j--;
+        }
+
+        return ans;
+    }
+
+
+
+*/
+
 public class  EficientJanitor {
 /*list.add(1.00f);
         list.add(1.99f);

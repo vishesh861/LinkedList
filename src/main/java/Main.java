@@ -97,7 +97,15 @@ public class Main {
        /* stream.flatMap(str-> Stream.of(str.charAt(2)))
                 .forEachOrdered(System.out::println);*/
 
-
-
+        int[] arr = {1, 4, 7, 8, 10};
+        int[] arr1 = {2, 3, 9};
+        Merge_Arr merge_arr = new Merge_Arr();
+        merge_arr.merge(arr,arr1);
+        for (int a : arr) {
+            System.out.print(a + " ");
+        }
+        for (int a : arr1) {
+            System.out.print(a + " ");
+        }
     }
 }

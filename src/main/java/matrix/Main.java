@@ -1,4 +1,4 @@
-package twodarray;
+package matrix;
 
 public class Main {
 

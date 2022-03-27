@@ -30,9 +30,9 @@ public class LongestCommonSubsequencePrinting {
                 j--;
             } else {
                 if (mat[i-1][j] > mat[i][j-1]) {
-                    j--;
-                } else {
                     i--;
+                } else {
+                    j--;
                 }
             }
         }

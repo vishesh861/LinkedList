@@ -2,30 +2,28 @@ package arrays;
 
 public class FindElementInSortedRotatedArray {
 
-    public int findElementInSortedRotatedArray (int[] arr, int target, int start, int end) {
-
-        if (start > end) {
-            return -1;
-        }
-
-        int mid = start + (end - start) / 2;
-
-        if (arr[mid] == target) {
-           return mid;
-        }
-
-        if (arr[start] <= arr[mid]) {
-            if (target >= arr[start] && target <= arr[mid]) {
-                return findElementInSortedRotatedArray(arr, target, start, mid-1);
-            } else {
-                return findElementInSortedRotatedArray(arr, target, mid+1, end);
+    public int search(int[] nums, int target) {
+        int l = 0, h = nums.length-1;
+        while(l <= h){
+            int mid = l + (h-l)/2;
+            if(nums[mid] == target) {
+                return mid;
             }
-        } else {
-            if (target >= arr[mid] && target <= arr[end]) {
-                return findElementInSortedRotatedArray(arr, target, mid+1, end);
-            } else {
-                return findElementInSortedRotatedArray(arr, target, start, mid-1);
+            if(nums[mid] == nums[h]) {
+                h--;
+            }
+            else if(nums[mid] < nums[h]){
+                if(target > nums[mid] && target <= nums[h])
+                    l = mid + 1;
+                else
+                    h = mid - 1;
+            }else{
+                if(target >= nums[l] && target < nums[mid])
+                    h = mid - 1;
+                else
+                    l = mid + 1;
             }
         }
+        return -1;
     }
 }

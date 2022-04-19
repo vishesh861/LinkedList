@@ -2,17 +2,25 @@ package BST;
 
 public class FixBstWithTwoNodesSwapped {
 
-    public void swap(Node node) {
-        Node prev = null,first = null,second = null;
-        swap(node.left);
-        if (prev != null && prev.key > node.key) {
+    Node prev = null, first = null, second = null;
 
-            if (first == null) {
+    public void recoverTree(Node root) {
+        evalSwappedNodes(root);
+        int temp = first.key;
+        first.key = second.key;
+        second.key = temp;
+    }
+
+    private void evalSwappedNodes(Node curr) {
+        if (curr == null)
+            return;
+        evalSwappedNodes(curr.left);
+        if (prev != null && prev.key > curr.key) {
+            if (first == null)
                 first = prev;
-            }
-            second = node;
+            second = curr;
         }
-        prev = node;
-        swap(node.right);
+        prev = curr;
+        evalSwappedNodes(curr.right);
     }
 }

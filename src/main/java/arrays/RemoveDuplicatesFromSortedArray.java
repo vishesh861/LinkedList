@@ -1,4 +1,4 @@
-package New15;
+package arrays;
 
 import java.util.ArrayList;
 

@@ -16,9 +16,9 @@ class NodeLru {
 
 class LRUCache
 {
-    private static Map<Integer, NodeLru> hsMap;
-    private static int capacity, count;
-    private static NodeLru head, tail;
+    private Map<Integer, NodeLru> hsMap;
+    private int capacity, count;
+    private NodeLru head, tail;
 
     //Constructor for initializing the cache capacity with the given value.
     LRUCache(int cap)
@@ -34,7 +34,7 @@ class LRUCache
         count = 0;
     }
 
-    public static void addToHead(NodeLru node)
+    public void addToHead(NodeLru node)
     {
         node.next = head.next;
         node.next.pre = node;
@@ -43,14 +43,14 @@ class LRUCache
     }
 
     //Function to delete a node.
-    public static void deleteNode(NodeLru node)
+    public void deleteNode(NodeLru node)
     {
         node.pre.next = node.next;
         node.next.pre = node.pre;
     }
 
     //Function to return value corresponding to the key.
-    public static int get(int key)
+    public int get(int key)
     {
         //if element is present in map,
         if (hsMap.get(key) != null)
@@ -68,7 +68,7 @@ class LRUCache
     }
 
     //Function for storing key-value pair.
-    public static void set(int key, int value)
+    public void set(int key, int value)
     {
         if (hsMap.get(key) != null)
         {

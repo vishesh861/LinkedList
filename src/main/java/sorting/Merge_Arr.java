@@ -1,3 +1,5 @@
+package sorting;
+
 public class Merge_Arr {
 
     public void merge(int[] X, int[] Y)

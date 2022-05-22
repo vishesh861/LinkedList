@@ -4,7 +4,7 @@ package strings;
 Input: s = "deeedbbcccbdaa", k = 3
 Output: "aa"
 * */
-public class RemoveDuplicates {
+public class RemoveKConsecutiveDuplicates {
 
     public String removeDuplicates(String s, int k) {
 

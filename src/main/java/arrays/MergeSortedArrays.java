@@ -9,31 +9,19 @@ package arrays;
 
 public class MergeSortedArrays {
 
-    public void merge(int[] a, int[] b) {
+    public void merge(int[] nums1, int m, int[] nums2, int n) {
+        int p = n + m - 1;
+        int x = m - 1;
+        int y = n - 1;
 
-        int ptr1 = a.length-1, ptr2 = b.length-a.length-1, ptr3 = b.length-1;
-
-        while (ptr1 >= 0 && ptr2 >= 0) {
-
-            if (a[ptr1] >= b[ptr2]) {
-                b[ptr3--] = a[ptr1--];
-            } else {
-                b[ptr3--] = b[ptr2--];
-            }
+        while (p >= 0) {
+            if (x >= 0 && y >= 0)
+                nums1[p--] = nums1[x] > nums2[y] ? nums1[x--] : nums2[y--];
+            else if (x < 0)
+                nums1[p--] = nums2[y--];
+            else
+                nums1[p--] = nums1[x--];
         }
-
-        while (ptr1 >= 0) {
-            b[ptr3--] = a[ptr1--];
-        }
-
-        while (ptr2 >= 0) {
-            b[ptr3--] = b[ptr2--];
-        }
-
-        for (int n : b) {
-            System.out.print(n);
-        }
-
     }
 
 }

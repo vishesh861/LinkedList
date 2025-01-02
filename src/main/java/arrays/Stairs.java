@@ -3,7 +3,8 @@ package arrays;
 public class Stairs {
 
     public void count(int m, int n) {
-
+        // m is total number of stairs
+        // n is maximum number of steps it can take
         int[] arr = new int[m+1];
         arr[0] = 1;
         int temp = 0;

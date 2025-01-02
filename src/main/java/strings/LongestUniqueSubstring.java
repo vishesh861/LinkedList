@@ -1,9 +1,10 @@
-import java.util.Arrays;
+package strings;
+
 import java.util.HashMap;
 
-public class LongestSubstring {
+public class LongestUniqueSubstring {
 
-    public int longestUniqueSubsttr(String s)
+    public int longestUniqueSubstr(String s)
     {
         HashMap<Character, Integer> map = new HashMap<>();
         int maximum_length = 0;

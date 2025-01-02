@@ -1,12 +1,5 @@
 package DynamicProgramming.LCS;
 
-import New15.MaximumSumSubsequenceNonAdjacent;
-
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
-
 
 public class Main {
     public static void main(String[] args){

@@ -1,3 +1,5 @@
+package numbers;
+
 public class AllPairsOfNumber {
 
     public void pairs(int num) {

@@ -1,6 +1,6 @@
 package trees;
 
-public class Sum { 
+public class SumOfLeafNodes {
 
     int total=0;
     public int sumOfLeftLeaves(Node root) {
@@ -19,4 +19,5 @@ public class Sum {
             sum1(root.right);
         }
     }
+
 }

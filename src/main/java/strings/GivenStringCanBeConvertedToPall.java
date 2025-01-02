@@ -1,3 +1,5 @@
+package strings;
+
 public class GivenStringCanBeConvertedToPall {
 
     public void convert(String str) {

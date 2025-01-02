@@ -117,10 +117,6 @@ public  class LinkedListMain {
      char[] str1_char = str1.toCharArray();
      char[] str2_char = str2.toCharArray();
 
-     Anagram a = new Anagram();
-     System.out.println(a.isAnagram(str1_char, str2_char));*//*
-
-
      //   Duplicate.repeatedCharacter("vishesh");
        */
 /* Abc a = new Abc();

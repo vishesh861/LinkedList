@@ -1,4 +1,4 @@
-package New15;
+package arrays;
 
 public class MaximumSumInCircularArray {
 

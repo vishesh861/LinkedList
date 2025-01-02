@@ -2,7 +2,7 @@ package arrays;
 
 import java.util.Arrays;
 
-public class MaximumUnsortedSubaaray {
+public class MaximumUnsortedSubarray {
 
     public int[] subUnsort(int[] arr) {
         int strt= -1 ,end= -1 ,i= 0 ,j= arr.length-1 ;

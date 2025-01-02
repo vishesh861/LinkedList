@@ -1,28 +1,26 @@
-package arrays;
+package list;
 
-import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.PriorityQueue;
 
 public class MergeKSortedLists {
 
-    public ListNode mergeKLists(ListNode[] lists) {
+    public Node mergeKLists(Node[] lists) {
         if(lists.length == 0)
             return null;
         PriorityQueue<Integer> pq = new PriorityQueue();
-        for(ListNode node : lists){
+        for(Node node : lists){
             while(node != null){
-                pq.add(node.val);
+                pq.add(node.data);
                 node = node.next;
             }
         }
         if(pq.isEmpty()){
             return null;
         }
-        ListNode head = new ListNode(pq.poll());
-        ListNode prev = head;
+        Node head = new Node(pq.poll());
+        Node prev = head;
         while(!pq.isEmpty()){
-            ListNode current = new ListNode(pq.poll());
+            Node current = new Node(pq.poll());
             prev.next = current;
             prev = current;
         }

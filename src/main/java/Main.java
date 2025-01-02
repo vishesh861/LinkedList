@@ -1,3 +1,5 @@
+import list.RotateListAntiClockwise;
+
 public class Main {
 
     public static void main(String[] args) throws Exception {
@@ -9,29 +11,10 @@ public class Main {
         MissingNumber2 missingNumber = new MissingNumber2();
         missingNumber.missing_two(arr, n);*/
 
-       /* LongestSubstring longestSubstring = new LongestSubstring();
-       int max = longestSubstring.longestUniqueSubsttr("vishesh");
-        System.out.println(max);*/
-
      /*   LongestPalindromeSubstring l = new LongestPalindromeSubstring();
         String str = l.longestPalindrome("babad");
         System.out.println(str);*/
 
-       /* Node1 node1 = new Node1(1);
-        node1.next = new Node1(2);
-        node1.next.next = new Node1(3);
-        node1.next.next.next = new Node1(4);
-        node1.next.next.next.next = new Node1(5);
-        node1.next.next.next.next.next = new Node1(6);
-        node1.next.next.next.next.next.next = new Node1(7);
-        node1.next.next.next.next.next.next.next = new Node1(8);
-
-        RotateList1 rotateList = new RotateList1();
-        Node1 head = rotateList.rotate(node1, 3);
-        while (head != null) {
-            System.out.print(head.data + " ");
-            head = head.next;
-        }*/
 
         /*LongestIncreasingSubsequence l = new LongestIncreasingSubsequence();
         int[] arr = {5,8,3,7,9,1};
@@ -97,7 +80,7 @@ public class Main {
        /* stream.flatMap(str-> Stream.of(str.charAt(2)))
                 .forEachOrdered(System.out::println);*/
 
-        int[] arr = {1, 4, 7, 8, 10};
+      /*  int[] arr = {1, 4, 7, 8, 10};
         int[] arr1 = {2, 3, 9};
         Merge_Arr merge_arr = new Merge_Arr();
         merge_arr.merge(arr,arr1);
@@ -106,6 +89,6 @@ public class Main {
         }
         for (int a : arr1) {
             System.out.print(a + " ");
-        }
+        }*/
     }
 }

@@ -1,8 +1,10 @@
-public class RotateList1 {
+package list;
 
-    public Node1 rotate(Node1 head, int k) {
+public class RotateListClockwise {
 
-        Node1 ptr = head, ptr1 = null;
+    public Node rotate(Node head, int k) {
+
+        Node ptr = head, ptr1 = null;
         int count = 0;
 
         while (ptr != null) {
@@ -18,7 +20,7 @@ public class RotateList1 {
         }
 
         ptr1.next = null;
-        Node1 p = ptr;
+        Node p = ptr;
 
         while (ptr.next != null) {
             ptr = ptr.next;

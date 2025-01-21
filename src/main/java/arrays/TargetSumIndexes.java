@@ -1,7 +1,9 @@
+package arrays;
+
 import java.util.HashMap;
 import java.util.Map;
 
-public class TargetSum {
+public class TargetSumIndexes {
 
     public int[] two_sum(int[] arr, int target) {
 

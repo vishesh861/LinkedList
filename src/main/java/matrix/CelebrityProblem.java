@@ -1,4 +1,4 @@
-package stack;
+package matrix;
 
 public class CelebrityProblem {
 

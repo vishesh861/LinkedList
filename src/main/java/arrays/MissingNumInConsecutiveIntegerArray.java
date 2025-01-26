@@ -1,10 +1,8 @@
 package arrays;
 
-import java.util.Arrays;
-
 /* Ques : WAP to find the missing number in a consecutive integer array???
 * */
-public class MissingNum {
+public class MissingNumInConsecutiveIntegerArray {
 
     public void missing(int[] arr) {
 

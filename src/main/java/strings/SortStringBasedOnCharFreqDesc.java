@@ -5,7 +5,7 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.PriorityQueue;
 
-public class SortCharactersBasedOnFreqDesc {
+public class SortStringBasedOnCharFreqDesc {
 
     public String frequencySort(String s) {
         Map<Character, Integer> hm = new HashMap<>();

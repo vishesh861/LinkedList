@@ -5,7 +5,7 @@ package arrays;
 //Output:[3, 4]
 //A = 3, B = 4
 
-public class FindMissingAndRepeating {
+public class FindMissingAndRepeatingBetween1ToN {
 
     public void missing() {
         int[] arr = {3,1,2,5,3};

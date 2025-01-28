@@ -1,6 +1,6 @@
 package list;
 
-public class CheckListIsPalindrome {
+public class PalindromeList {
 
     public boolean isPalindrome(Node head) {
 

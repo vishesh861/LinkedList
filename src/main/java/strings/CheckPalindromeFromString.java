@@ -1,9 +1,9 @@
 package strings;
 
-public class CheckPallindromeFromString {
+public class CheckPalindromeFromString {
 
 
-    public Boolean pall (String str) {
+    public Boolean pall(String str) {
 
         int[] arr = new int[256];
         int count = 0;

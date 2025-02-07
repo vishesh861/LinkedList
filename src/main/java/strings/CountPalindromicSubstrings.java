@@ -1,6 +1,6 @@
 package strings;
 
-public class PallindromicSubstring {
+public class CountPalindromicSubstrings {
 
     public int countSubstrings(String s) {
         int count = 0;

@@ -10,7 +10,7 @@ package arrays;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CombinationSum {
+public class CombinationSumUnbounded {
 
     public List<List<Integer>> combination(int[] arr, int target) {
         List<List<Integer>> result = new ArrayList<>();

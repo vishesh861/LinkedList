@@ -7,7 +7,7 @@ package arrays;
 *
 * */
 
-public class MergeSortedArrays {
+public class MergeTwoSortedArrays {
 
     public void merge(int[] nums1, int m, int[] nums2, int n) {
         int p = n + m - 1;

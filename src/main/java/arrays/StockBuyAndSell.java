@@ -1,6 +1,6 @@
 package arrays;
 
-public class MaxProfit {
+public class StockBuyAndSell {
 
     public void max(int arr[]) {
 

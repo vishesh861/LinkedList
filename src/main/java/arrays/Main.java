@@ -4,11 +4,6 @@ public class Main {
 
     public static void main(String[] args) {
 
-        int[] arr = {2,3,6,7};
-        int target = 7;
-        CombinationSum combinationSum = new CombinationSum();
-        combinationSum.combination(arr, target);
-
       /*  AllSubsetsWithoutRepeat a = new AllSubsetsWithoutRepeat();
         int[] arr = {1,2,3};
         a.subset(arr);*/

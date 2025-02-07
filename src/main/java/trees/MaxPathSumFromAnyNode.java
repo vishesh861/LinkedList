@@ -2,33 +2,24 @@ package trees;
 
 public class MaxPathSumFromAnyNode {
 
-    int res;
-    public int max(Node node, int res) {
+    int max = Integer.MIN_VALUE;
 
-        if (node == null) {
-            return 0;
-        }
-
-        int l = max(node.left, res);
-        int r = max(node.right, res);
-
-        int max_single = Math.max(Math.max(l, r) + node.key,
-                node.key);
-
-        int max_top = Math.max(max_single, l + r + node.key);
-
-        res = Math.max(res, max_top);
-
-        return max_single;
+    public int maxPathSum(Node root) {
+        helper(root);
+        return max;
     }
 
-    public int max_path(Node node) {
+    // helper returns the max branch
+    // plus current node's value
+    int helper(Node root) {
+        if (root == null) return 0;
 
-        res = Integer.MIN_VALUE;
+        int left = Math.max(helper(root.left), 0);
+        int right = Math.max(helper(root.right), 0);
 
-        max(node, res);
+        max = Math.max(max, root.key + left + right);
 
-        return res;
+        return root.key + Math.max(left, right);
     }
 
 }

@@ -13,15 +13,15 @@ public class MinimumInSortedRotatedArray {
             int mid = low + (high - low) / 2;
 
             if (arr[mid] > arr[high]) {
-                low = mid + 1;
+                low = mid;
+                high--;
             } else if (arr[mid] < arr[low]) {
                 high = mid;
-                low++;
             } else {
-                high--;
+                low++;
             }
         }
 
-        return arr[low];
+        return arr[high];
     }
 }

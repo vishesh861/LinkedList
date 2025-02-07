@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 
-public class CombinationSum2 {
+public class CombinationSumBounded {
 
     public List<List<Integer>> combinationSum2(int[] arr, int target) {
         List<List<Integer>> results = new ArrayList<>();

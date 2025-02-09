@@ -1,4 +1,4 @@
-package subsequence;
+package arrays;
 
 public class LongestIncreasingSubsequence {
 

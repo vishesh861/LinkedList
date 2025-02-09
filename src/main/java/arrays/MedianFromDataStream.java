@@ -1,14 +1,14 @@
-package numbers;
+package arrays;
 
 import java.util.Collections;
 import java.util.PriorityQueue;
 
-public class FindMedianFromDataStream {
+public class MedianFromDataStream {
 
     PriorityQueue<Integer> small;
     PriorityQueue<Integer> large;
     boolean even;
-    public FindMedianFromDataStream() {
+    public MedianFromDataStream() {
         small = new PriorityQueue<>(Collections.reverseOrder());
         large = new PriorityQueue<>();
         even = true;

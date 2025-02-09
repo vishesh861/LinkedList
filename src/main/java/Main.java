@@ -1,3 +1,4 @@
+import java.util.List;
 import list.RotateListAntiClockwise;
 
 public class Main {
@@ -90,5 +91,13 @@ public class Main {
         for (int a : arr1) {
             System.out.print(a + " ");
         }*/
+
+        NQueens n = new NQueens();
+        List<List<String>> result = n.solveNQueens(4);
+        for (List<String> l : result) {
+            for (String s : l) {
+                System.out.println(s);
+            }
+        }
     }
 }

@@ -1,10 +1,12 @@
 package numbers;
 
+import arrays.MedianFromDataStream;
+
 public class Main {
 
     public static void main(String[] args) {
 
-        FindMedianFromDataStream f = new FindMedianFromDataStream();
+        MedianFromDataStream f = new MedianFromDataStream();
         f.addNum(1);
         f.addNum(2);
         f.findMedian();

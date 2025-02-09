@@ -1,5 +1,8 @@
 package strings;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -9,8 +12,15 @@ public class Main {
 
         smallestWindowContainingAllString.min(s,t);*/
 
-        String[] arr = {"eat","tea","tan","ate","nat","bat"};
-        GroupAnagrams groupAnagrams = new GroupAnagrams();
-        groupAnagrams.groupAnagrams(arr);
+        String beginWord = "hit", endWord = "cog";
+        List<String> wordList = new ArrayList<>();
+        wordList.add("hot");
+        wordList.add("dot");
+        wordList.add("dog");
+        wordList.add("lot");
+        wordList.add("log");
+        wordList.add("cog");
+        WordLadder w = new WordLadder();
+        w.ladderLength(beginWord, endWord, wordList);
     }
 }

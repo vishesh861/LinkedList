@@ -90,6 +90,9 @@ public class Main {
         /*FindMissingAndRepeating f = new FindMissingAndRepeating();
         f.missing();*/
 
+        LongestIncreasingSubsequence l = new LongestIncreasingSubsequence();
+        System.out.println(l.longestSubsequence(8, new int[] {10,9,2,5,3,7,110,18}));
+
 
     }
 }

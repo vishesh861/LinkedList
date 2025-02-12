@@ -1,6 +1,6 @@
 package strings;
 
-public class SmallestWindowContainingAllString {
+public class MinimumWindowContainingAllString {
 
     public String min(String s,String t) {
         return Minimum_Window(s.toCharArray(), t.toCharArray());

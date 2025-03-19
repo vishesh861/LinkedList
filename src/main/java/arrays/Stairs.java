@@ -1,7 +1,8 @@
 package arrays;
 
 public class Stairs {
-
+  //  You are climbing a staircase. It takes n steps to reach the top.
+ //   Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?
     public void count(int m, int n) {
         // m is total number of stairs
         // n is maximum number of steps it can take

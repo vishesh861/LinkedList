@@ -1,30 +1,26 @@
 package arrays;
 
 import java.util.ArrayList;
+import java.util.TreeSet;
 
 public class CeilingOnLeft {
 
     public void ceiling(int[] arr) {
 
-        ArrayList<Integer> list = new ArrayList<>();
+        int n = arr.length;
+        TreeSet<Integer> set = new TreeSet<Integer>();
+        ArrayList<Integer> result = new ArrayList<Integer>(n);
 
-        for (int i=0; i<arr.length; i++) {
-            int max = Integer.MIN_VALUE, flag = 0;
-            for (int j=0; j<i; j++) {
-
-                if (arr[j] < arr[i]) {
-                    flag = 1;
-                    max = Integer.max(max, arr[j]);
-                }
-            }
-
-            if (flag == 0) {
-                list.add(-1);
-            } else {
-                list.add(max);
-            }
+        for (int i = 0; i < n; i++) {
+            Integer greater = set.ceiling(arr[i]);
+            if (greater == null)
+                result.add(-1);
+            else
+                result.add(greater);
+            set.add(arr[i]);
         }
 
-        list.forEach(System.out::println);
+        for (int i = 0; i < n; i++)
+            System.out.print(result.get(i) + " ");
     }
 }

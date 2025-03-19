@@ -12,6 +12,8 @@ public class Arr0s1s {
                 int temp = arr[j];
                 arr[j] = arr[i];
                 arr[i] = temp;
+                i++;
+                j--;
             } else if (arr[i] == 0 && arr[j] == 1) {
                 i++;
                 j--;

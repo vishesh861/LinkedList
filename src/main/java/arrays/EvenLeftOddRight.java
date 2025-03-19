@@ -3,27 +3,28 @@ package arrays;
 public class EvenLeftOddRight {
 
     public void evenodd(int[] arr) {
-        int k=0,j=arr.length-1;
-        for (int i=0; i<arr.length; i++) {
+        int i=0,j=arr.length-1;
 
+        while (i<j) {
 
-            while (arr[k] % 2 == 0) {
-                k++;
-            }
-
-            while (arr[j] % 2 == 1) {
+            if (arr[i] % 2 == 1 && arr[j] % 2 == 0) {
+                int temp = arr[j];
+                arr[j] = arr[i];
+                arr[i] = temp;
+                i++;
                 j--;
-            }
-
-            if (k<j) {
-                int temp = arr[k];
-                arr[k] = arr[j];
-                arr[j] = temp;
+            } else if (arr[i] % 2 == 0 && arr[j] % 2 == 1) {
+                i++;
+                j--;
+            } else if (arr[i] % 2 == 0) {
+                i++;
+            } else if (arr[j] % 2 == 1) {
+                j--;
             }
         }
 
         for (int a : arr) {
-            System.out.print(a);
+            System.out.print(a + " ");
         }
     }
 }

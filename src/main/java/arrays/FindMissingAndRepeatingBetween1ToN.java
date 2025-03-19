@@ -8,7 +8,7 @@ package arrays;
 public class FindMissingAndRepeatingBetween1ToN {
 
     public void missing() {
-        int[] arr = {3,1,2,5,3};
+        int[] arr = {3,1,2,5,3}; //{1,2,3,5,3};
         for (int i=0; i<arr.length; i++) {
 
             if (arr[i] != i+1 && arr[arr[i] - 1] != arr[i]) {

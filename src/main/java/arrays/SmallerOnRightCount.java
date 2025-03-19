@@ -2,7 +2,7 @@ package arrays;
 
 import java.util.TreeSet;
 
-public class SmallerOnRight {
+public class SmallerOnRightCount {
 
     public void smaller(int[] arr) {
         int count = 0;

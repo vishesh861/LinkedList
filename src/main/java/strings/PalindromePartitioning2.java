@@ -1,10 +1,6 @@
 package strings;
 
-//Given a string s, partition s such that every
-//substring
-// of the partition is a
-//palindrome
-//.
+//Given a string s, partition s such that every substring of the partition is a palindrome
 public class PalindromePartitioning2 {
 
     public int minCut(String s) {

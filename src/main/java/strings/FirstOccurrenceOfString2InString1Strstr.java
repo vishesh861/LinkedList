@@ -1,6 +1,6 @@
 package strings;
 
-public class ImplementStrstr {
+public class FirstOccurrenceOfString2InString1Strstr {
 
     public int strStr(String haystack, String needle) {
 

@@ -11,22 +11,24 @@ Output:
 * */
 
 public class ArrayPermutations {
-
-    public List<List<Integer>> permuteUnique(int[] num) {
-        LinkedList<List<Integer>> res = new LinkedList<>();
-        res.add(new ArrayList<>());
-        for (int i = 0; i < num.length; i++) {
-            Set<String> cache = new HashSet<>();
-            while (res.peekFirst().size() == i) {
-                List<Integer> l = res.removeFirst();
-                for (int j = 0; j <= l.size(); j++) {
-                    List<Integer> newL = new ArrayList<>(l.subList(0,j));
-                    newL.add(num[i]);
-                    newL.addAll(l.subList(j,l.size()));
-                    if (cache.add(newL.toString())) res.add(newL);
-                }
+    public void permute(LinkedList<List<Integer>> res, int[] num, int left, int right) {
+        if (left == right) {
+            LinkedList<Integer> list = new LinkedList<>();
+            for (int a : num)
+                list.add(a);
+            res.add(list);
+        }
+        else {
+            for (int i = left; i <= right; i++) {
+                int[] swapped = swap(num, left, i);
+                permute(res, swapped, left + 1, right);
             }
         }
-        return res;
+    }
+    public int[] swap(int[] num, int pos1, int pos2) {
+        int temp = num[pos1];
+        num[pos1] = num[pos2];
+        num[pos2] = temp;
+        return num;
     }
 }

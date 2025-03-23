@@ -2,7 +2,7 @@ package tic;
 
 public class Board {
 
-    public static void board(String[] board) {
+    public static void main(String[] board) {
         System.out.println("|---|---|---|");
         System.out.println("| " + board[0] + " | "
                 + board[1] + " | " + board[2]

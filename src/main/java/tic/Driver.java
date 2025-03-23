@@ -1,7 +1,6 @@
 package tic;
 
 
-import java.util.Arrays;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -21,7 +20,7 @@ public class Driver{
         }
 
         System.out.println("Welcome to 3x3 Tic Tac Toe.");
-        Board.board(board);
+        Board.main(board);
 
         System.out.println(
                 "X will play first. Enter a slot number to place X in:");
@@ -60,7 +59,7 @@ public class Driver{
                     turn = "X";
                 }
 
-                Board.board(board);
+                Board.main(board);
                 winner = Service.checkWinner(board, turn);
             }
             else {

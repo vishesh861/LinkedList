@@ -1,5 +1,5 @@
 import java.util.List;
-import list.RotateListAntiClockwise;
+import matrix.NQueens;
 
 public class Main {
 

@@ -1,7 +1,7 @@
 package arrays;
 
 public class PeakElement {
-
+    // Find index of an element which is strictly greater than its neighbors.
     public int findPeakElement(int[] nums) {
         int l = 0, r = nums.length - 1;
         while (l < r) {

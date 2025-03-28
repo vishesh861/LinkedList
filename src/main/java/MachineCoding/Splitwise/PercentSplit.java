@@ -1,4 +1,4 @@
-package Splitwise;
+package MachineCoding.Splitwise;
 
 public class PercentSplit extends Split {
     double percent;

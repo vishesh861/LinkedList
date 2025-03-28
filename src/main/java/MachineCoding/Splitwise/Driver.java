@@ -1,4 +1,4 @@
-package Splitwise;
+package MachineCoding.Splitwise;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,11 +1,11 @@
-package SnakeAndLadder;
+package MachineCoding.SnakeAndLadder;
 
-public class Ladder {
-    // Each ladder will have its start position at some number and end position at a larger number.
+public class Snake {
+    // Each snake will have its head at some number and its tail at a smaller number.
     private int start;
     private int end;
 
-    public Ladder(int start, int end) {
+    public Snake(int start, int end) {
         this.start = start;
         this.end = end;
     }

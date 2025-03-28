@@ -1,4 +1,4 @@
-package Splitwise;
+package MachineCoding.Splitwise;
 
 public class EqualSplit extends Split {
 

@@ -1,4 +1,4 @@
-package tic;
+package MachineCoding.tic;
 
 public class Board {
 

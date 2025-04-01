@@ -1,3 +1,5 @@
+package CustomCollection;
+
 class Entry<K, V> {
 
     private K key;
@@ -40,7 +42,7 @@ public class MyHashMap<K, V> {
 
     private int capacity = 16; //Initial default capacity
 
-    private Entry<K, V>[] table; //Array of Entry object
+    private Entry<K, V>[] table; //Array of CustomCollection.Entry object
 
     public MyHashMap(){
         table = new Entry[capacity];

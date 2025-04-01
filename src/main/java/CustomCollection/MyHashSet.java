@@ -1,4 +1,4 @@
-/*
+package CustomCollection;/*
     Time complexity: O(Q^2)
     Space complexity: O(HASHTABLE_SIZE)
 

@@ -8,7 +8,7 @@ import java.util.List;
 * Input: n = 3
 Output: ["((()))","(()())","(())()","()(())","()()()"]
 * */
-public class GenerateParanthesis {
+public class GenerateParanthesisAllCombinations {
 
     public List<String> generateParenthesis(int n) {
         List<String> list = new ArrayList<String>();

@@ -1,7 +1,7 @@
 package strings;
 
 public class FirstOccurrenceOfString2InString1Strstr {
-
+    //haystack = string1   //needle = string2
     public int strStr(String haystack, String needle) {
 
         int l1 = haystack.length(), l2 = needle.length();

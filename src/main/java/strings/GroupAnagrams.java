@@ -4,10 +4,11 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class GroupAnagrams {
 
-    public List<List<String>> groupAnagrams(String[] strs) {
+   /* public List<List<String>> groupAnagrams(String[] strs) {
         HashMap<String,List<String>> map=new HashMap<>();
 
         for(int i=0;i<strs.length;i++){
@@ -24,33 +25,36 @@ public class GroupAnagrams {
             }
         }
         return new ArrayList<>(map.values());
-    }
-
-   /* public String getSignature(String s) {
-        int[] count = new int[26];
-        for (char c : s.toCharArray()) {
-            count[c - 'a']++;
-        }
-
-        StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < 26; i++) {
-            if (count[i] != 0) {
-                sb.append((char) ('a' + i)).append(count[i]);
-            }
-        }
-        return sb.toString();
-    }
+    }*/
 
     public List<List<String>> groupAnagrams(String[] strs) {
-        List<List<String>> result = new ArrayList<>();
-        Map<String, List<String>> groups = new HashMap<>();
+        if (strs.length == 0)
+            return new ArrayList<List<String>>();
+
+        Map<String, List<String>> res = new HashMap<String, List<String>>();
+
+        int[] count = new int[26];
 
         for (String s : strs) {
-            groups.computeIfAbsent(getSignature(s), k -> new ArrayList<>()).add(s);
+            Arrays.fill(count, 0);
+            for (char c : s.toCharArray()){
+                int index = c - 'a';
+                count[index]++;
+            }
+
+            StringBuilder delimStr = new StringBuilder("");
+            for (int i = 0; i < 26; i++) {
+                delimStr.append('#');
+                delimStr.append(count[i]);
+            }
+
+            String key = delimStr.toString();
+            if (!res.containsKey(key))
+                res.put(key, new ArrayList<>());
+
+            res.get(key).add(s);
         }
 
-        result.addAll(groups.values());
-
-        return result;
-    }*/
+        return new ArrayList<>(res.values());
+    }
 }

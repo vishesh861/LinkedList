@@ -23,8 +23,8 @@ public class FindMissingAndRepeatingBetween1ToN {
         for (int i=0; i<arr.length; i++) {
 
             if (arr[i] != i+1) {
-                System.out.println(arr[i]);
-                System.out.println(i+1);
+                System.out.println(arr[i]); //repeating
+                System.out.println(i+1);    //missing
                 break;
             }
         }

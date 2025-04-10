@@ -14,9 +14,12 @@ public class SortStringBasedOnCharFreqDesc {
             hm.put(c, hm.getOrDefault(c, 0) + 1);
         }
 
-        PriorityQueue<Entry<Character, Integer>> pq = new PriorityQueue<>(
-                (a, b) -> b.getValue() - a.getValue()
-        );
+        PriorityQueue<Entry<Character, Integer>> pq = new PriorityQueue<>((x, y) -> {
+            if (x.getValue() == y.getValue()) {
+                return Character.compare(x.getKey(), y.getKey());
+            }
+            return Integer.compare(y.getValue(), x.getValue());
+        });
 
         pq.addAll(hm.entrySet());
 

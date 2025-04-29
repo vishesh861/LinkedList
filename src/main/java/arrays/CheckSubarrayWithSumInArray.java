@@ -4,7 +4,7 @@ import java.util.HashMap;
 
 /* Ques : WAP to find the given sum present in an unsorted array???
 * */
-public class SumInArray {
+public class CheckSubarrayWithSumInArray {
 
 // {1,2,3,4,5,6,7} sum = 16
     public Boolean present(int[] arr, int sum) {

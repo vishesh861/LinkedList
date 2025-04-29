@@ -3,7 +3,7 @@ package arrays;
 import java.util.HashMap;
 import java.util.Map;
 
-public class AllPairsWithGivenDiff {
+public class AllPairsWithGivenDiffCount {
 
     public int countKDifference(int[] arr, int diff) {
         Map<Integer,Integer> map = new HashMap<>();

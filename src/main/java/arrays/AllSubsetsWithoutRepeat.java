@@ -1,29 +1,29 @@
 package arrays;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class AllSubsetsWithoutRepeat {
 
-    public void subset(int[] arr) {
+    public List<List<Integer>> subsetsWithDup(int[] nums) {
+        List<List<Integer>> ans = new ArrayList<>();
+        List<Integer> temp = new ArrayList<>();
 
-        List<List<Integer>> output = new ArrayList();
-        output.add(new ArrayList<Integer>());
-
-        for (int num : arr) {
-            List<List<Integer>> newSubsets = new ArrayList();
-            for (List<Integer> curr : output) {
-                ArrayList<Integer> l = new ArrayList<Integer>(curr);
-                newSubsets.add(new ArrayList<Integer>(curr){
-                    {
-                        add(num);
-                    }
-                });
-            }
-            for (List<Integer> curr : newSubsets) {
-                output.add(curr);
-            }
-        }
-        System.out.println(output);
+        Arrays.sort(nums);
+        find(0, nums, temp, ans);
+        return ans;
     }
+
+    private void find(int index, int[] nums, List<Integer> temp, List<List<Integer>> ans) {
+        ans.add(new ArrayList<>(temp));
+
+        for (int i = index; i < nums.length; i++) {
+            if (i != index && nums[i] == nums[i - 1]) continue;
+            temp.add(nums[i]);
+            find(i + 1, nums, temp, ans);
+            temp.remove(temp.size() - 1);
+        }
+    }
+
 }

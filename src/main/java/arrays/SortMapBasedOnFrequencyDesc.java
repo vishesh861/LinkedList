@@ -7,17 +7,17 @@ import java.util.PriorityQueue;
 
 public class SortMapBasedOnFrequencyDesc {
 
-    public void sort(int[] arr) {
+    public void sort(String[] arr) {
 
-        HashMap<Integer, Integer> map = new HashMap<>();
+        HashMap<String, Integer> map = new HashMap<>();
 
-        for (int a : arr) {
+        for (String a : arr) {
             map.put(a, map.getOrDefault(a, 0) + 1);
         }
 
-        PriorityQueue<Entry<Integer, Integer>> maxHeap = new PriorityQueue<>((x, y) -> {
+        PriorityQueue<Entry<String, Integer>> maxHeap = new PriorityQueue<>((x, y) -> {
             if (x.getValue() == y.getValue()) {
-                return Integer.compare(x.getKey(), y.getKey());
+                return x.getKey().compareTo(y.getKey());
             }
             return Integer.compare(y.getValue(), x.getValue());
         });
@@ -25,7 +25,7 @@ public class SortMapBasedOnFrequencyDesc {
         maxHeap.addAll(map.entrySet());
 
         while (!maxHeap.isEmpty()) {
-            Map.Entry<Integer, Integer> m = maxHeap.poll();
+            Map.Entry<String, Integer> m = maxHeap.poll();
             System.out.print(m.getKey() + " " + m.getValue());
             System.out.println();
         }

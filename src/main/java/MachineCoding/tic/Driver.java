@@ -20,7 +20,7 @@ public class Driver{
         }
 
         System.out.println("Welcome to 3x3 Tic Tac Toe.");
-        Board.main(board);
+        Board.buildBoard(board);
 
         System.out.println(
                 "X will play first. Enter a slot number to place X in:");
@@ -59,7 +59,7 @@ public class Driver{
                     turn = "X";
                 }
 
-                Board.main(board);
+                Board.buildBoard(board);
                 winner = Service.checkWinner(board, turn);
             }
             else {

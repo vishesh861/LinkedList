@@ -2,7 +2,7 @@ package MachineCoding.tic;
 
 public class Board {
 
-    public static void main(String[] board) {
+    public static void buildBoard(String[] board) {
         System.out.println("|---|---|---|");
         System.out.println("| " + board[0] + " | "
                 + board[1] + " | " + board[2]

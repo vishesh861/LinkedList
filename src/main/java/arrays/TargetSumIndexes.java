@@ -6,20 +6,22 @@ import java.util.Map;
 public class TargetSumIndexes {
 
     public int[] two_sum(int[] arr, int target) {
-
         Map<Integer, Integer> map = new HashMap<>();
-        for (int i = 0; i < arr.length; i++) {
-            map.put(arr[i], i);
-        }
-        for (int i = 0; i < arr.length; i++) {
-            int complement = target - arr[i];
-            if (map.containsKey(complement)) {
+        
+
+        for (int i=0; i<arr.length; i++) {
+            int diff = target - arr[i];
+
+            if (map.containsKey(diff)) {
                 return new int[] {
-                        map.get(complement), i
+                    map.get(diff), i
                 };
             }
+
+            map.put(arr[i], i);
         }
-        throw new IllegalArgumentException("No two sum solution");
+
+        return new int[] {};
 
     }
 }

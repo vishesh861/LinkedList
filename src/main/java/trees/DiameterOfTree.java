@@ -13,8 +13,8 @@ public class DiameterOfTree {
         int l = util(root.left);
         int r = util(root.right);
 
-        if (l + r + 1 > dia)
-            dia = l + r + 1;
+        if (l + r > dia)
+            dia = l + r;
 
         return 1 + Math.max(l, r);
     }
